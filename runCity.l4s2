@@ -1,0 +1,28 @@
+# start Parcel generator and city
+ParcelGenerator/ParcelGenerator -city L_A -timeFactor 60 -bufferMax 100 -workTime 30 -natsUrl nats://localhost:4222 > logs/pg.L_A.log &
+city/city -city L_A -nats nats://localhost:4222 > logs/city.L_A.log &
+ParcelCollector/ParcelCollector -city L_A -natsUrl nats://localhost:4222 > logs/pc.L_A.log &
+ParcelGenerator/ParcelGenerator -city L_B -timeFactor 60 -bufferMax 100 -workTime 30 -natsUrl nats://localhost:4222 > logs/pg.L_B.log &
+city/city -city L_B -nats nats://localhost:4222 > logs/city.L_B.log &
+ParcelCollector/ParcelCollector -city L_B -natsUrl nats://localhost:4222 > logs/pc.L_B.log &
+ParcelGenerator/ParcelGenerator -city L_C -timeFactor 60 -bufferMax 100 -workTime 30 -natsUrl nats://localhost:4222 > logs/pg.L_C.log &
+city/city -city L_C -nats nats://localhost:4222 > logs/city.L_C.log &
+ParcelCollector/ParcelCollector -city L_C -natsUrl nats://localhost:4222 > logs/pc.L_C.log &
+ParcelGenerator/ParcelGenerator -city L_D -timeFactor 60 -bufferMax 100 -workTime 30 -natsUrl nats://localhost:4222 > logs/pg.L_D.log &
+city/city -city L_D -nats nats://localhost:4222 > logs/city.L_D.log &
+ParcelCollector/ParcelCollector -city L_D -natsUrl nats://localhost:4222 > logs/pc.L_D.log &
+ParcelGenerator/ParcelGenerator -city S_a -timeFactor 60 -bufferMax 100 -workTime 30 -natsUrl nats://localhost:4222 > logs/pg.S_a.log &
+city/city -city S_a -nats nats://localhost:4222 > logs/city.S_a.log &
+ParcelCollector/ParcelCollector -city S_a -natsUrl nats://localhost:4222 > logs/pc.S_a.log &
+ParcelGenerator/ParcelGenerator -city S_b -timeFactor 60 -bufferMax 100 -workTime 30 -natsUrl nats://localhost:4222 > logs/pg.S_b.log &
+city/city -city S_b -nats nats://localhost:4222 > logs/city.S_b.log &
+ParcelCollector/ParcelCollector -city S_b -natsUrl nats://localhost:4222 > logs/pc.S_b.log &
+sleep 5
+# start trucks
+echo Starting Trucks
+truck/truck -init L_D -id t0 -w 40 -f 60 -ld 1 -s 10 -nats nats://localhost:4222 > logs/t0.log &
+truck/truck -init S_a -id t1 -w 40 -f 60 -ld 1 -s 10 -nats nats://localhost:4222 > logs/t1.log &
+truck/truck -init S_b -id t2 -w 40 -f 60 -ld 1 -s 10 -nats nats://localhost:4222 > logs/t2.log &
+truck/truck -init L_A -id t3 -w 40 -f 60 -ld 1 -s 10 -nats nats://localhost:4222 > logs/t3.log &
+truck/truck -init L_B -id t4 -w 40 -f 60 -ld 1 -s 10 -nats nats://localhost:4222 > logs/t4.log &
+truck/truck -init L_C -id t5 -w 40 -f 60 -ld 1 -s 10 -nats nats://localhost:4222 > logs/t5.log &

@@ -1,0 +1,31 @@
+Description of files:
+    buildall.sh         build all go files
+    killall.sh          kill all process
+    cmdGenerator/       generate commands to start the whole simution
+                        enviroment. including collector, generator, 
+                        truck and city
+    FakedConsumer/      Used to test generater and collector
+    floyd/              Used to calculate min distance between cities
+    getPara/            Package used to et parameter from command line
+                        and Enviroment
+    mapGenerator/       Generate map
+    ParcelCollector/    Collector
+    ParcelGenerator/    Generator
+    repo.oam.ericloud/  Package Levlog
+    sampleCity/         A simple sample city implemented to test the
+                        simulator
+    Statics/            Collect data from trucks and collectors, used
+                        to calculate final score
+    truck/              truck
+    Truck and parcel generator.pptx     API description
+
+How to run:
+    1. generate map file, using mapGenerator.
+    2. generate shell script, using cmdGenerator
+    3. run shell script
+    For details of cmdGenerator and mapGenerator, please
+    refer to source code.
+
+Note:
+    truck should not be started before all generator collector and city
+    been started.
