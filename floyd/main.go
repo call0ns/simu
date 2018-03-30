@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"repo.oam.ericloud/paas.git/poc2015/util/levlog"
+	"simu/util/levlog"
 )
 
 type City struct {

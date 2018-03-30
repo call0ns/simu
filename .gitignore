@@ -23,3 +23,15 @@ _testmain.go
 *.test
 *.prof
 
+# Ignore the binary
+FakedConsumer/FakedConsumer
+ParcelCollector/ParcelCollector
+ParcelGenerator/ParcelGenerator
+Statics/Statics
+city/city
+cmdGenerator/cmdGenerator
+floyd/floyd
+mapGenerator/mapGenerator
+sampleCity/sampleCity
+truck/truck
+

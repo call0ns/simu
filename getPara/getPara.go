@@ -6,7 +6,7 @@ import (
 	"os"
 	"strconv"
 
-	"repo.oam.ericloud/paas.git/poc2015/util/levlog"
+	"simu/util/levlog"
 )
 
 func GetIntWithDefault(pval *int, name string, defaultVal int, usage string) {

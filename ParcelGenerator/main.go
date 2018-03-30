@@ -3,15 +3,16 @@ package main
 
 import (
 	"fmt"
-	"simu/getPara"
 	"hash/crc64"
 	"math/rand"
 	"os"
+	"simu/getPara"
 	"sync"
 	"time"
 
+	"simu/util/levlog"
+
 	"github.com/nats-io/nats"
-	"repo.oam.ericloud/paas.git/poc2015/util/levlog"
 )
 
 type Parcel struct {

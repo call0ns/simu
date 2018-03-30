@@ -7,8 +7,9 @@ import (
 	"strings"
 	"time"
 
+	"simu/util/levlog"
+
 	"github.com/nats-io/nats"
-	"repo.oam.ericloud/paas.git/poc2015/util/levlog"
 )
 
 func main() {

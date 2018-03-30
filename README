@@ -1,3 +1,10 @@
+Dependece:
+	mkdir -p ./github.com/nats-io
+	cd ./github.com/nats-io
+	git clone https://github.com/nats-io/nats
+	cd ../..
+	git clone https://github.com/call0ns/simu.git
+
 Description of files:
     buildall.sh         build all go files
     killall.sh          kill all process

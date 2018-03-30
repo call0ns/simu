@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"repo.oam.ericloud/paas.git/poc2015/util"
+	"simu/util"
 )
 
 type City struct {
@@ -165,11 +165,11 @@ func main() {
 			remainCity[y] = remainCity[numRemain]
 		}
 		/*
-		fmt.Println(a.name, b.name)
-		for i := 0; i < numRemain; i++ {
-			fmt.Print(remainCity[i].name, " ")
-		}
-		fmt.Println()
+			fmt.Println(a.name, b.name)
+			for i := 0; i < numRemain; i++ {
+				fmt.Print(remainCity[i].name, " ")
+			}
+			fmt.Println()
 		*/
 	}
 	//check if the network is an connected map
